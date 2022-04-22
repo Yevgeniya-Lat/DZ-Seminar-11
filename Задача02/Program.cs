@@ -16,17 +16,23 @@ int Prompt(string massege)
 
 bool PrimeNumber(int number)
 {
-    if (number > 1) ;
-
-    for (int i = 2; i < number; i++)
+    for (int i = 2; i <= number; i++)
     {
-        if (number % i == 0)
-            return false;
+        if (number / i == 1)
+        {
         return true;
+        } 
+        
+        if (number % i == 0)
+        {
+            return false;
+        }
+        
     }
 
     return false;
 }
+  
 
 int N = Prompt("Введите число N: ");
 Console.WriteLine();
