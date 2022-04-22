@@ -14,7 +14,7 @@ int Prompt (string massege)
 }
 
 
-    bool PowerTwq(int a)
+    bool PowerTwo(int a)
     {
         if (a == 2) 
         {
@@ -23,7 +23,7 @@ int Prompt (string massege)
 
         else if (a % 2 == 0) 
         {
-            return PowerTwq(a / 2);
+            return PowerTwo(a / 2);
         }
         else return false;
         
@@ -31,6 +31,6 @@ int Prompt (string massege)
 
 int N = Prompt("Введите число N: ");
 System.Console.WriteLine();
-if (PowerTwq(N)) Console.WriteLine($"{N} -> Является степенью двойки"); 
+if (PowerTwo(N)) Console.WriteLine($"{N} -> Является степенью двойки"); 
 else Console.WriteLine($"{N} -> Не является степенью двойки"); 
 
